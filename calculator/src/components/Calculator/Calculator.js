@@ -1,4 +1,8 @@
+import {useState} from "react";
+
 export default function Calculator(props){
+    const [num1, setNum1] = useState(0);
+    const [num2, setnum2] = useState(0);
     return(
         <div>
             <table>
