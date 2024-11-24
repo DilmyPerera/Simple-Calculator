@@ -8,9 +8,9 @@ export default function Calculator(props){
         <div className="container">
 
             <div className="operations">
-                <table>
+                <table align="center" >
                     <tbody>
-                        <tr align="right">
+                        <tr align="right" >
                             <td>Enter Number 1: </td>
                             <td>
                                 <input type="number" value={num1} 
@@ -23,6 +23,10 @@ export default function Calculator(props){
                             onChange = {(e)=>{setnum2(e.target.value)}}/>
                             </td>
                         </tr>
+                        <tr>
+                            <td colSpan="2" style={{ height: '20px' }}></td>
+                        </tr>
+
                         <tr>
                             <td align="right">Addition : </td>
                             <td align="left">{Number(num1)+Number(num2)}</td>
