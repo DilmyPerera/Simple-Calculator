@@ -41,7 +41,7 @@ export default function Calculator(props){
                         </tr>
                         <tr>
                             <td align="right">Division : </td>
-                            <td align="left">{num1*num2}</td>
+                            <td align="left">{num1/num2}</td>
                         </tr>
                     </tbody>
                 </table>
