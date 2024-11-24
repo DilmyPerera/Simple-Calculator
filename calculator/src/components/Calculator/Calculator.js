@@ -9,11 +9,16 @@ export default function Calculator(props){
                 <tbody>
                     <tr>
                         <td>Enter Number 1: </td>
-                        <td><input type="number" value={num1}/> </td>
+                        <td>
+                            <input type="number" value={num1} 
+                            onChange = {(e)=>{setNum1(e.target.value)}}/>
+                        </td>
                     </tr>
                     <tr>
                         <td>Enter Number 2 : </td>
-                        <td><input type="number" value={num2}/></td>
+                        <td><input type="number" value={num2}
+                        onChange = {(e)=>{setnum2(e.target.value)}}/>
+                        </td>
                     </tr>
                     <tr>
                         <td>Addition : </td>
